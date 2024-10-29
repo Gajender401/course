@@ -22,8 +22,8 @@ const WhyThisCourse: React.FC = () => {
         transition={{ duration: 0.5 }}
         className="text-center mb-10"
       >
-        <h2 className="text-4xl font-bold mb-4">
-          Why this <span className="text-purple-500">course?</span>
+        <h2 className="text-6xl font-bold mb-4">
+          Why this course?
         </h2>
         <p className="text-gray-600 max-w-2xl mx-auto">
           Lorem ipsum dolor sit amet consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.
@@ -31,14 +31,14 @@ const WhyThisCourse: React.FC = () => {
       </motion.div>
 
       {/* Main Content */}
-      <div className="flex flex-col lg:flex-row gap-8 items-center">
+      <div className="flex flex-col lg:flex-row  items-center max-w-[1280px] mx-auto justify-between">
         {/* Card Section */}
         <motion.div
           ref={cardsRef}
           initial={{ opacity: 0, x: -50 }}
           animate={cardsInView ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.5 }}
-          className="grid grid-cols-2 gap-6 lg:w-1/2"
+          className="grid grid-cols-2 gap-6 max-w-[500px]"
         >
           {[
             { delay: 0.1, value: '80+', label: 'Lessons' },
@@ -51,10 +51,10 @@ const WhyThisCourse: React.FC = () => {
               initial={{ opacity: 0, scale: 0.8 }}
               animate={cardsInView ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.5, delay }}
-              className="bg-white shadow-md rounded-lg p-6 text-center"
+              className="bg-white shadow-md rounded-lg p-7 text-center"
             >
-              <h3 className="text-2xl font-bold text-purple-600">{value}</h3>
-              <p>{label}</p>
+              <h3 className="lg:text-6xl font-bold ">{value}</h3>
+              <p className='text-lg text-[#5678]'>{label}</p>
             </motion.div>
           ))}
         </motion.div>
@@ -67,7 +67,7 @@ const WhyThisCourse: React.FC = () => {
           transition={{ duration: 0.5 }}
           className="lg:w-1/2"
         >
-          <div className="relative overflow-hidden rounded-lg shadow-lg">
+          <div className="relative overflow-hidden rounded-lg shadow-lg lg:mt-0 mt-10">
             <iframe
               className="w-full h-64 lg:h-80"
               src="https://www.youtube.com/embed/-HAbDt_DuBE"
@@ -79,7 +79,7 @@ const WhyThisCourse: React.FC = () => {
           </div>
         </motion.div>
       </div>
-    </section>
+    </section >
   );
 };
 
