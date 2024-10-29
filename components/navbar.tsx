@@ -55,7 +55,7 @@ const Navbar = () => {
                 <a href="#" className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium">
                   About Us
                 </a>
-                <a href="#" className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium">
+                <a href="/contact-us" className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium">
                   Contact Us
                 </a>
               </div>
