@@ -89,7 +89,7 @@ const stories = [
 
 const SuccessStories = () => {
   return (
-    <div className=" lg:max-w-[1350px] mx-auto">
+    <div className=" lg:max-w-[1280px] mx-auto">
       <h2 className="text-4xl font-bold mt-10">Our Achievers Work With</h2>
       <div className="flex justify-center gap-4 ">
         <OurAchiver />
@@ -135,7 +135,7 @@ const SuccessStories = () => {
                         </div>
                       </div>
                       <p className="text-gray-700 mb-2 flex-1">{story.description}</p>
-                      <div className="flex justify-between items-center text-sm">
+                      <div className="flex justify-between items-center text-sm cursor-pointer">
                         <div className="text-green-700">
                           From <strong>{story.from}</strong>
                         </div>

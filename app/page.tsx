@@ -5,6 +5,7 @@ import WhyThisCourse from '@/components/why'
 import WhatWillYouLearn from '@/components/learn'
 import CareerTrajectory from '@/components/career'
 import SuccessStories from '@/components/success'
+import ReachDirectly from '@/components/ReachDirectly'
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <WhatWillYouLearn />
       <CareerTrajectory />
       <SuccessStories />
+      <ReachDirectly />
       <Footer />
     </main>
   )
